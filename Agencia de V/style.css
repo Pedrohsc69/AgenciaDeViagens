@@ -17,7 +17,7 @@ header {
     display: flex;
     gap: 128px;
     align-items: center;
-    
+
 
     background-color: #007BFF;
     color: white;
@@ -30,22 +30,25 @@ header #agencia {
     gap: 24px;
     margin: auto;
 }
-header #agencia h1{
+
+header #agencia h1 {
     font-size: 30px;
     filter: drop-shadow(4px 4px 4px #444444);
-    
+
 }
+
 header #agencia img {
     width: 84px;
     filter: drop-shadow(2px 4px 2px #444444);
 }
 
-header #links{
+header #links {
     display: flex;
     align-items: center;
     margin: auto;
     font-size: 20px;
 }
+
 header #links ul {
     list-style: none;
     display: flex;
@@ -53,26 +56,63 @@ header #links ul {
     margin: auto 34px;
 
 }
+
 header #links a {
     text-decoration: none;
-    
+
     color: #ffffff;
-    
+
     transition: all 0.2s ease-in-out;
 }
+
 header #links a:hover {
     filter: drop-shadow(0px 0px 4px #ffffff);
     color: #2b2b2b;
-    
+
 }
 
 
-.hero {
-    background-image: url('https://via.placeholder.com/1200x400');
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/HomeSection.png');
     background-size: cover;
-    color: white;
-    text-align: center;
     padding: 50px 0;
+    margin-top: 50px;
+
+    color: white;
+    box-shadow: initial 0px 0px 30px #444444;
+   
+}
+
+#home .hero {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0 8px 0;
+
+    backdrop-filter: blur(90px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+
+}
+
+#home .hero h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+
+    color: #332e1d;
+}
+
+#home .hero p {
+    font-size: 20px;
+
+    color: #2b2b2b;
 }
 
 section {
@@ -128,7 +168,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 
     background-color: #007BFF;
     color: white;
