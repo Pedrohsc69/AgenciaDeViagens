@@ -1,7 +1,7 @@
 ﻿# <h1 align="center"> Agência de Viagens </h1>
  
 <p align="center">
-  <img alt="projeto DevLinks" src="images/" width="100%">
+  <img alt="Agência de Viagens" src="images/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
