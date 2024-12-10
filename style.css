@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #ffffff;
+
+}
+
+header {
+    width: 100%;
+    padding: 14px 0;
+    display: flex;
+    gap: 128px;
+    align-items: center;
+
+
+    background-color: #007BFF;
+    color: white;
+}
+
+header #agencia {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 24px;
+    margin: auto;
+}
+
+header #agencia h1 {
+    font-size: 30px;
+    filter: drop-shadow(4px 4px 4px #444444);
+
+}
+
+header #agencia img {
+    width: 84px;
+    filter: drop-shadow(2px 4px 2px #444444);
+}
+
+header #links {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+header #links ul {
+    list-style: none;
+    display: flex;
+    gap: 34px;
+    margin: auto 34px;
+    
+}
+
+header #links a {
+    text-decoration: none;
+
+    color: #ffffff;
+
+    transition: all 0.2s ease-in-out;
+}
+
+header #links a:hover {
+    filter: drop-shadow(0px 0px 4px #ffffff);
+    color: #2b2b2b;
+
+}
+
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/HomeSection.png');
+    background-size: cover;
+    padding: 50px 0;
+    margin-top: 50px;
+
+    color: white;
+    box-shadow: initial 0px 0px 30px #444444;
+
+}
+
+#home .hero {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0 8px 0;
+
+    backdrop-filter: blur(90px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+
+}
+
+#home .hero h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    
+    color: #332e1d;
+}
+
+#home .hero p {
+    font-size: 20px;
+
+    color: #2b2b2b;
+}
+
+.pacotes {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pacotes #title {
+    width: 100%;
+    color: #332e1d;
+}
+
+.pacotes .images {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 22%;
+
+}
+
+/* TORRE EIFFEL */
+.pacotes .images .info-torre {
+    width: 30%;
+    border-radius: 32px;
+
+    text-align: center;
+
+    border: 5px solid #332e1d;
+
+    transition: all 0.3s ease;
+}
+
+.pacotes .images .info-torre:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0px 0px 30px #332e1d;
+
+}
+
+.pacotes .images .info-torre .images-torre {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+}
+
+.pacotes .images .info-torre .images-torre #torre {
+    width: 300px;
+    filter: drop-shadow(0px 0px 5px #332e1d);
+    object-fit: cover;
+    
+    transition: all 0.3s ease;
+}
+.pacotes .images .info-torre:hover .images-torre #torre { 
+    rotate: 5deg;
+    transform: scale(1.05);
+}
+.pacotes .images .info-torre .images-torre #background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bandeira\ franca.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.pacotes .images .info-torre:hover .images-torre #background{
+    opacity: 1;
+    transform: scale(1.3);
+}
+.pacotes .images .info-torre .text-torre {
+    color: #332e1d;
+}
+
+/* ESTATUA DA LIBERDADE */
+.pacotes .info-new-york {
+    width: 30%;
+    border-radius: 32px;
+
+    text-align: center;
+
+    border: 5px solid #008080;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.pacotes .info-new-york:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px #008080;
+}
+
+.pacotes .images .info-new-york .images-estatua {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+}
+
+.pacotes .images .info-new-york .images-estatua #estatua {
+    width: 250px;
+    height: 300px;
+    filter: drop-shadow(0px 0px 5px #008080);
+    transition: all 0.3s ease;
+}
+.pacotes .images .info-new-york:hover .images-estatua #estatua {
+    transform: scale(1.05);
+}
+.pacotes .images .info-new-york .images-estatua #background-esta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bandeira\ eua.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.pacotes .images .info-new-york:hover .images-estatua #background-esta {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.pacotes .images .info-new-york .text-estatua {
+    color: #008080;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    width: 100%;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: #007BFF;
+    color: white;
+}
